@@ -1,0 +1,7 @@
+extends layout
+
+block content
+	p  This is a very simple file microservice, it upload a file and return data from the file in json format. 
+	form(action='/', method='post', enctype="multipart/form-data")
+		input(type='file', name='file')
+		input(type='submit', value="Upload")
